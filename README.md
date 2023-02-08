@@ -1,30 +1,16 @@
-# SolidStart
+# kUnban
 
-Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
+Simple kanban app based on solid-start. It's highly experimental
 
-## Creating a project
+## Stuffs:
+- solid-start - heart of app. Rendering, ssr, routing, server ect.
+- prisma - orm for database
+- tailwind powered by unocss - styling
+- unocss:presetIcons - use all incons inside css
+- typescript - types
+- unplugin-auto-import - you don't need to import most used stuff
+- eslint - lint you code
+- pnpm - main package manager
 
-```bash
-# create a new project in the current directory
-npm init solid@latest
-
-# create a new project in my-app
-npm init solid@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Solid apps are built with _adapters_, which optimise your project for deployment to different environments.
-
-By default, `npm run build` will generate a Node app that you can run with `npm start`. To use a different adapter, add it to the `devDependencies` in `package.json` and specify in your `vite.config.js`.
+## Helpers (small but useful)
+- clsx - join tailwind classes
