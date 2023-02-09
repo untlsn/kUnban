@@ -12,7 +12,8 @@
     "types": ["solid-start/env"],
     "baseUrl": "./",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "@prisma/client": ["./src/types/prisma-client"]
     }
   }
 }

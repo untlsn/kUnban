@@ -5,6 +5,11 @@ export default defineConfig({
   server: {
     port: 3333,
   },
+  resolve: {
+    alias: {
+      '@prisma/client': './src/types/prisma-client',
+    },
+  },
   plugins: [
     ...await passVitePlugins({
       adapter: 'static',

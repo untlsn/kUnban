@@ -6,11 +6,13 @@ export const autoImport = (imports?: Record<string, (string | [string, string])[
     imports: [
       'solid-js',
       {
-        'solid-start': ['A'],
+        'solid-start/server': ['createServerData$', 'createServerAction$', 'useRequest', 'createServerMultiAction$'],
+        'solid-start': ['createCookie', 'createRouteAction', 'createRouteData', 'createSessionStorage', 'createCookieSessionStorage', 'createMemorySessionStorage', 'A', 'Link', 'Style', 'Title', 'useHref', 'useLocation', 'useNavigate', 'useMatch', 'useParams', 'useRoutes', 'useIsRouting', 'useRouteData', 'useServerContext', 'useSearchParams', 'useResolvedPath', 'Navigate'],
         clsx: ['clsx'],
+        '@prisma/client': ['PrismaClient'],
         ...imports,
       },
     ],
-    dts: fromRoot('./src/auto-imports.d.ts'),
+    dts: fromRoot('./src/types/auto-imports.d.ts'),
   })
 );
